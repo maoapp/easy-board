@@ -2,6 +2,16 @@
 
 App build on React, Next and Node
 
+### Development Tasks
+
+- Project Setup: Establish project structure, config, dependencies.
+- Create navBar, mock screens, layout and global styles
+- Create auth feature UI and API logic
+- Create board feature UI and API logic
+- Deploy App
+
+## 
+
 ## Getting Started
 
 First, run the development server:
