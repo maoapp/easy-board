@@ -59,15 +59,9 @@ const Home = () => {
 
   const onHandleSubmit = async (e: React.FormEvent<HTMLFormElement>, isSignUp: boolean) => {
     e.preventDefault();
-
-    if (isSignUp) {
-      setSignUpRequest({...signUpRequest, loading: true});
-    } else {
-      setLoginRequest({...loginRequest, loading: true});
-    }
+    setSignUpRequest({...signUpRequest, loading: true});
 
     try {
-
       if (isSignUp) {
         await signUp(formData);
       } else {
@@ -78,6 +72,8 @@ const Home = () => {
     } catch {
       addToast('Account creation failure, try later...', ToastType.Error);
     }
+
+    setSignUpRequest({...signUpRequest, loading: false});
   };
 
   return (

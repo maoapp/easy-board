@@ -1,7 +1,6 @@
 'use client';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd';
-import { useRouter } from 'next/navigation';
 
 import CreateBoardModal from '@/components/CreateBoardModal';
 import ModalLoader from '@/components/ModalLoader';
@@ -29,7 +28,6 @@ const Board = () => {
   const [showBoardForm, setShowBoardForm] = useState<boolean>(false);
   const [boardTask, setBoardTask] = useState<Task>(initialTaskState);
   const { addToast, toasts } = useToast();
-  const router = useRouter();
   const { token, logout } = useAuthentication();
   const [fetchBoardState, setFetchBoardState] = useState<APIStates>({
     loading: false,
@@ -105,8 +103,8 @@ const Board = () => {
 
   const onHandleStatusUpdate = async (task: Task, status: BoardStatus) => {
     try {
-      await updateTask({...task, status}, token);
       addToast('Task updated successfully', ToastType.Success);
+      await updateTask({...task, status}, token);
     } catch {
       addToast('Error updating the task, try later...', ToastType.Success);
     }

@@ -10,9 +10,11 @@ const useAuthentication = () => {
   }, []);
   
   const getSession = async () => {
-    const storedToken = sessionStorage.getItem('token');
+    const storedToken = await sessionStorage.getItem('token');
     if (storedToken) {
       setToken(storedToken);
+    } else {
+      router.push('/');
     }
   }
 

@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({handleCreate, handleLogout}) => {
         <p className="font-bold">Easy Board</p>
       </div>
       <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
-        <Button onClick={handleCreate}>Create</Button>
+        <Button onClick={handleCreate}>Create Task</Button>
         <Button onClick={handleLogout}>Logout</Button>
       </div>
     </div>
