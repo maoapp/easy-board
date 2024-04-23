@@ -2,13 +2,34 @@
 
 App build on React, Next and Node
 
-### Development Tasks
+### Methodology
+
+To tackle the exercise efficiently, I implemented a structured methodology focused on setting up the foundational components of the project. This encompassed delineating the core structure, crafting the architecture, and seamlessly integrating essential tools tailored for the client application.
+
+Given the requirements of the position and the nature of the exercise, I opted for Next.js and Tailwind CSS, as they aligned well with the project's needs. For state management, I leveraged local state and React hooks. This decision stemmed from the project's scope, which only necessitated two screens and didn't warrant the overhead of larger state management libraries like Redux or Context.
+
+To streamline HTTP requests, I utilized Axios and created an API service to centralize all network calls. This approach facilitates future enhancements, such as incorporating interceptors for implementing techniques like refresh tokens.
+
+The deployment was handled by Vercel to take advantage of its seamless integration with Next.js, ensuring smooth and efficient deployment processes.
+
+### Development Tasks Completed
 
 - Project Setup: Establish project structure, config, dependencies.
 - Create navBar, mock screens, layout and global styles
 - Create auth feature UI and API logic
 - Create board feature UI and API logic
 - Deploy App
+
+### Development Tasks Pending
+
+- Implementing a robust state management solution will facilitate scalability for the application.
+- Explore alternative methods for sharing tokens between services to enhance security and efficiency.
+- Enhance the error feedback mechanism by displaying detailed error messages returned by the board service in the toast notifications.
+- Enable the capability to rearrange board tasks within the same column and sort them based on the updated date for improved usability and organization.
+
+### Note
+
+Regrettably, due to the deadline constraints, I was unable to implement a branch strategy similar to that of the service project.
 
 ## Getting Started
 
