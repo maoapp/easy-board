@@ -10,8 +10,6 @@ App build on React, Next and Node
 - Create board feature UI and API logic
 - Deploy App
 
-## 
-
 ## Getting Started
 
 First, run the development server:
