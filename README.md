@@ -31,6 +31,10 @@ The deployment was handled by Vercel to take advantage of its seamless integrati
 
 Regrettably, due to the deadline constraints, I was unable to implement a branch strategy similar to that of the service project.
 
+### Demo
+
+https://github.com/maoapp/easy-board/assets/19539930/0229a04f-3c68-4535-875e-4396926f17e4
+
 ## Getting Started
 
 First, run the development server:
